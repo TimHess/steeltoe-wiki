@@ -24,7 +24,7 @@ The following table shows the releases that are currently supported:
 | 2.3.x            | August 21, 2019    | December 31, 2021| No  | .NET Framework 4.6.1+, .NET Core 3.1(LTS) |
 | 2.2.x            | March 15, 2019     | December 31, 2021| No  | .NET Framework 4.6.1+, .NET Core 3.1(LTS) |
 | 2.1.x            | August 18, 2018    | December 31, 2021| No  | .NET Framework 4.6.1+, .NET Core 3.1(LTS) |
-| 2.0.x            | February 15, 2018  | December 31, 2021| No  | .NET Framework 4.6.1+, .NET Core 3.1(LTS) |
+| 2.x              | February 15, 2018  | December 31, 2021| No  | .NET Framework 4.6.1+, .NET Core 3.1(LTS) |
 
 
 ### End of Life Releases
@@ -32,8 +32,8 @@ The following table shows the releases that have reached end-of-life and no long
 
 | Steeltoe Version | Release Date       | End of Life Date | LTS |
 | ---------------- | ------------       | ---------------- | --- |
-| 1.0.x            | April 7, 2017      | August 2019      | No  |
 | 1.1.x            | June 19, 2017      | August 2019      | No  |
+| 1.0.x            | April 7, 2017      | August 2019      | No  |
 
 ## Release Compatibility
 The Steeltoe team is very aware of the need for stability and backward compatibility across our major releases (i.e. 2.x and 3.x). Our goal is to keep backward compatibility across all minor and maintenance releases (e.g. 3.1.3 would still work with 3.1.2, 3.1.1, 3.1.0).  For major releases, we utilize these releases to remove all deprecated code and make breaking changes when necessary for code optimization, enhancements, architecture changes, and redesign. We strive to keep all compatibility changes/breakages to major releases only.  There is a rare chance that we might be forced to break compatibility in a minor release, but we will be sure to be clear of our reasons for doing so.
