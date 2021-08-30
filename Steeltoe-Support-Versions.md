@@ -18,7 +18,7 @@ The following table shows the releases that are currently supported:
 | Steeltoe Version | Release Date       | End of Life Date | LTS | .NET Runtime Version  |
 | ---------------- | ------------       | ---------------- | --- | --------------------  |
 | 3.1.x            | July 17, 2021      | July 17, 2022    | No  | .NET Core 3.1 (LTS), .NET 5 |
-| 3.x              | August 24, 2020    | August 31, 2022  | No  | .NET Core 3.1 (LTS), .NET 5 |
+| 3.x              | August 24, 2020    | August 31, 2023  | No  | .NET Core 3.1 (LTS), .NET 5 |
 | 2.5.x            | October 15, 2020   | October 31, 2023 | Yes | .NET Framework 4.6.1+, .NET Core 3.1(LTS) |
 | 2.4.x            | November 13, 2019  | December 31, 2021| No  | .NET Framework 4.6.1+, .NET Core 3.1(LTS) |
 | 2.3.x            | August 21, 2019    | December 31, 2021| No  | .NET Framework 4.6.1+, .NET Core 3.1(LTS) |
