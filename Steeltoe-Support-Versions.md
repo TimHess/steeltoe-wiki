@@ -38,3 +38,5 @@ The following table shows the releases that have reached end-of-life and no long
 ## Release Compatibility
 The Steeltoe team is very aware of the need for stability and backward compatibility across our major releases (i.e. 2.x and 3.x). Our goal is to keep backward compatibility across all minor and maintenance releases (e.g. 3.1.3 would still work with 3.1.2, 3.1.1, 3.1.0).  For major releases, we utilize these releases to remove all deprecated code and make breaking changes when necessary for code optimization, enhancements, architecture changes, and redesign. We strive to keep all compatibility changes/breakages to major releases only.  There is a rare chance that we might be forced to break compatibility in a minor release, but we will be sure to be clear of our reasons for doing so.
 
+## .NET Runtime Support
+Steeltoe libraries depend on .NET runtimes, so we follow the [.NET Core and .NET 5+ Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).  Once a runtime is out of support, Steeltoe will also discontinue support for running our libraries on those runtime versions. 
