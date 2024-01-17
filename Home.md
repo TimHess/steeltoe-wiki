@@ -17,21 +17,20 @@ Steeltoe libraries are built on top of .NET APIs.  Steeltoe allows you work with
 
 Today, most Steeltoe components work in a stand-alone environment as well other cloud platforms (Kubernetes and Cloud Foundry).
 
-Steeltoe components are built for .NET developers to quickly leverage some of the basic patterns (for example: centralized configuration management, service discovery, circuit breakers, etc.) typically found in highly scalable and resilient distributed applications.
+Steeltoe components are built for .NET developers to quickly leverage some of the basic patterns (for example: centralized configuration management, service discovery, etc.) typically found in highly scalable and resilient distributed applications.
 
 Steeltoe provides services that broadly fall into two categories:
 
-* Services that simplify using .NET and ASP.NET on cloud platforms like Cloud Foundry:
+* Services that simplify using .NET on cloud platforms like Cloud Foundry:
   * Connectors (MySql, PostgreSQL, Microsoft SQL Server, RabbitMQ, Redis, OAuth, etc)
   * Configuration
   * Security (OAuth SSO, JWT, Redis Key Ring Storage, etc.)
   * Dynamic Logging
 
 * Services that enable .NET and ASP.NET developers to leverage Netflix OSS, Spring Cloud and other industry leading services:
-  * Configuration providers (Spring Cloud, Hashicorp Vault, etc.)
+  * Configuration providers (Spring Cloud, Placeholders, etc.)
   * Service Discovery client (Netflix Eureka, Hashicorp Consul etc.)
-  * CircuitBreaker (Netflix Hystrix, etc.)
-  * Management (Steeltoe Actuators, Prometheus, OpenCensus/OpenTelemetry)
+  * Management (Steeltoe Actuators, Prometheus)
 
 [Steeltoe is freely available](https://www.nuget.org/packages?q=steeltoe) for production application usage today. Be sure to visit the [official Steeltoe site](https://steeltoe.io/).
 
@@ -49,9 +48,8 @@ Steeltoe is fully open source and is found under the SteeltoeOSS organization on
 
 These are located in the [Steeltoe](https://github.com/SteeltoeOSS/Steeltoe) repository:
 
-* Configuration - configuration providers which extend the reach of [.NET Configuration](https://github.com/dotnet/extensions/tree/master/src/Configuration) services
+* Configuration - configuration providers which extend the reach of .NET Configuration services
 * Common - Common packages to other Steeltoe components
-* CircuitBreaker - monitor and isolate requests to remote dependent services with latency and fault tolerance logic
 * Connectors - simplify the process of configuring and using back-end services locally and in the cloud
 * Discovery - provide the ability to register and discover services locally and in the cloud
 * Logging - adds logging extensions
@@ -68,11 +66,8 @@ These are located in the [Steeltoe](https://github.com/SteeltoeOSS/Steeltoe) rep
    * [InitializrApi](https://github.com/SteeltoeOSS/InitializrApi) - The Initializr Api source code
    * [InitializrConfig](https://github.com/SteeltoeOSS/InitializrConfig) - The Initializr configuration and template data
    * [InitializrConfigServer](https://github.com/SteeltoeOSS/InitializrConfigServer) - The Initializr Configuration Server
-* [Tooling](https://github.com/SteeltoeOSS/Tooling) - Steeltoe SDK and Tooling (Not currently active)
 * [Dockerfiles](https://github.com/SteeltoeOSS/Dockerfiles) - Our collection of docker files we have on dockerhub
 * [Schema](https://github.com/SteeltoeOSS/Schema) - The schema build for Steeltoe components
-* [eShopOnContainers](https://github.com/SteeltoeOSS/eShopOnContainers) - Sample reference microservice and container based application with added Steeltoe capabilities (Forked and updated from dotnet-architecture org)
-
 
 ## Releases
 
@@ -88,13 +83,13 @@ Check out the [release milestones here](https://github.com/SteeltoeOSS/Steeltoe/
 
 1. Follow any "Get Started" link on the [Steeltoe site](https://steeltoe.io/)
 1. Review, run, and modify the extensive collection of [Samples](https://github.com/SteeltoeOSS/Samples) available on Github
-1. To get down into the details of any Steeltoe project, read the [documentation](https://steeltoe.io/docs/)
+1. To get down into the details of any Steeltoe project, read the [documentation](https://docs.steeltoe.io/)
 
 ## Contributing
 
 The Steeltoe project welcomes contributions on GitHub both by filing issues and through PRs. You are also welcome to join our discussions on [Slack](https://slack.steeltoe.io/)
 
-Check out the [contributing guidelines](https://github.com/SteeltoeOSS/.github/blob/master/CONTRIBUTING.md) page to see how you can get involved and contribute to Steeltoe.
+Check out the [contributing guidelines](https://github.com/SteeltoeOSS/.github/blob/main/CONTRIBUTING.md) page to see how you can get involved and contribute to Steeltoe.
 
 Also its worth noting, the Steeltoe project has adopted the code of conduct defined by the [Contributor Covenant](https://contributor-covenant.org/).
 If you'd like more information, see the [.NET Foundation Code of Conduct](https://www.dotnetfoundation.org/code-of-conduct) write-up.
@@ -107,9 +102,20 @@ Maintenance branches are created after each major release (i.e. 2.x) and minor b
 
 All release and release candidate packages are listed under the tags section on GitHub (e.g. 2.2.0).
 
-The latest Steeltoe packages from each branch can be found on [MyGet](https://myget.org/gallery/steeltoedev).
-
 The released and release candidates can be found on [NuGet](https://www.nuget.org/profiles/steeltoe).
+
+The latest Steeltoe packages from each branch can be found in the [.NET Foundation NuGet feed](https://pkgs.dev.azure.com/dotnet/Steeltoe/_packaging/dev/nuget/v3/index.json).
+
+Using this nuget.config file will enable access to all Steeltoe packages:
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <packageSources>
+    <add key="SteeltoeDev" value="https://pkgs.dev.azure.com/dotnet/Steeltoe/_packaging/dev/nuget/v3/index.json" />
+    <add key="NuGet" value="https://api.nuget.org/v3/index.json" />
+  </packageSources>
+</configuration>
+```
 
 ## Building from Source
 
@@ -124,6 +130,6 @@ As a member of the [.NET Foundation](https://dotnetfoundation.org/), the Steelto
 
 ## Licenses
 
-The Steeltoe project uses the [Apache License Version 2.0](https://github.com/SteeltoeOSS/.github/blob/master/LICENSE.md) license for all of its code.  See the [contribution licensing](https://github.com/SteeltoeOSS/.github/blob/master/contributing-docs/contributing-license.md) document for more details.
+The Steeltoe project uses the [Apache License Version 2.0](https://github.com/SteeltoeOSS/.github/blob/main/LICENSE.md) license for all of its code.  See the [contribution licensing](https://github.com/SteeltoeOSS/.github/blob/main/contributing-docs/contributing-license.md) document for more details.
 
 
