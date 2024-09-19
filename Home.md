@@ -122,7 +122,7 @@ Using this nuget.config file will enable access to all Steeltoe packages:
 Steeltoe components can be built from source with a recent version of the [.NET Core SDK](https://dotnet.microsoft.com/download/visual-studio-sdks) on Windows, Linux or MacOS. Any IDE that supports .NET is expected to work - core contributors regularly use Visual Studio, Visual Studio Code and JetBrains Rider. Visual Studio Solution (`.sln`) files are provided for each component, along with a single `.sln` file that will load all components.
 
 ### Running the tests
-Running the integration tests requires Config server and RabbitMQ to be running. See [here](https://github.com/SteeltoeOSS/Samples/blob/main/CommonTasks.md) for how to start them.
+Running the integration tests requires Config Server to be running. See [here](https://github.com/SteeltoeOSS/Samples/blob/main/CommonTasks.md) for how to start them.
 
 ## Governance Model
 
