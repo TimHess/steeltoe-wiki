@@ -13,49 +13,44 @@
 Steeltoe is an open-source project aimed at developing cloud-native .NET microservice applications. This project provides libraries that follow similar development patterns from well-known and proven microservice libraries like Netflix OSS, Spring Cloud and others.
 
 Steeltoe libraries are built on top of .NET APIs.
-- Steeltoe 4.x requires .NET 8 or higher.
-- Steeltoe 3.x requires .NET Core 3.1 or higher.
-- Steeltoe 2.x requires .NET Framework 4.5.2 or higher.
+
+* Steeltoe 4.x requires .NET 8 or higher.
+* Steeltoe 3.x requires .NET Core 3.1 or higher.
+* Steeltoe 2.x requires .NET Framework 4.5.2 or higher.
 
 Today, most Steeltoe components work in a stand-alone environment, as well as on cloud platforms (Kubernetes and Cloud Foundry).
 
-Steeltoe components are built for .NET developers to quickly leverage some of the basic patterns (for example: centralized configuration management, service discovery, etc.) typically found in highly scalable and resilient distributed applications.
+Steeltoe components are built for .NET developers to quickly leverage some of the basic patterns typically found in highly scalable and resilient distributed applications.
+Key features include:
 
-Steeltoe provides services that broadly fall into two categories:
-
-* Services that simplify using .NET on cloud platforms like Cloud Foundry:
-  * Connectors (MySql, PostgreSQL, Microsoft SQL Server, RabbitMQ, Redis, OAuth, etc)
-  * Configuration
-  * Security (OAuth SSO, JWT, Redis Key Ring Storage, etc.)
-  * Dynamic Logging
-
-* Services that enable .NET and ASP.NET developers to leverage Netflix OSS, Spring Cloud and other industry leading services:
-  * Configuration providers (Spring Cloud, Placeholders, etc.)
-  * Service Discovery client (Netflix Eureka, Hashicorp Consul etc.)
-  * Management (Steeltoe Actuators, Prometheus)
+* External (optionally encrypted) configuration using [Spring Cloud Config Server](https://docs.spring.io/spring-cloud-config/docs/current/reference/html/)
+* Service discovery with [Netflix Eureka](https://spring.io/projects/spring-cloud-netflix) and [HashiCorp Consul](https://www.consul.io/)
+* Management endpoints (compatible with [actuators](https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html)), providing system info (such as versions, configuration, service container contents, mapped routes and HTTP traffic), heap/thread dumps, health checks, exporting metrics to [Prometheus](https://prometheus.io/), and changing log levels at runtime.
+* Connectivity to databases (such as [SQL Server](https://www.microsoft.com/sql-server)/[Azure SQL](https://azure.microsoft.com/products/azure-sql), [Cosmos DB](https://azure.microsoft.com/products/cosmos-db/), [MongoDB](https://www.mongodb.com/), [Redis](https://redis.io/), [RabbitMQ](https://www.rabbitmq.com/), [PostgreSQL](https://www.postgresql.org/), and [MySQL](https://www.mysql.com/)), including support for [Entity Framework Core](https://learn.microsoft.com/ef/core/)
+* Single sign-on, JWT and Certificate auth with [Cloud Foundry](https://www.cloudfoundry.org/)
 
 [Steeltoe is freely available](https://www.nuget.org/packages?q=Steeltoe) for production application usage today. Be sure to visit the [official Steeltoe site](https://steeltoe.io/).
 
 ## Project Repositories
 
-Steeltoe is fully open source and is found under the SteeltoeOSS organization on GitHub.
+Steeltoe is fully open-source and can be found under the [SteeltoeOSS organization on GitHub](https://github.com/SteeltoeOSS).
 
 ### Steeltoe Core Components
 
 These are located in the [Steeltoe](https://github.com/SteeltoeOSS/Steeltoe) repository:
 
 * Configuration - configuration providers which extend the reach of .NET Configuration services
-* Common - Common packages to other Steeltoe components
+* Common - common packages used by other Steeltoe components
 * Connectors - simplify the process of configuring and using back-end services locally and in the cloud
-* Discovery - provide the ability to register and discover services locally and in the cloud
-* Logging - adds logging extensions
-* Management - add monitoring and management to production based application
+* Discovery - register and discover services locally and in the cloud
+* Logging - view and change minimum log levels at runtime
+* Management - monitoring and management endpoints for web applications
 * Security - simplify integration of security services provided by the cloud platform
 
 #### Other Repositories
 
-* [Samples](https://github.com/SteeltoeOSS/Samples) - Our collection of samples, used as a reference for .NET application development with Steeltoe.
-* [Documentation](https://github.com/SteeltoeOSS/Documentation) - The source for the [Steeltoe.io](https://steeltoe.io) website
+* [Samples](https://github.com/SteeltoeOSS/Samples) - our collection of samples, used as a reference for .NET application development with Steeltoe
+* [Documentation](https://github.com/SteeltoeOSS/Documentation) - the source for the [Steeltoe.io](https://steeltoe.io) website
 * [Initializr](https://start.steeltoe.io) - quickly create a new .NET project that uses Steeltoe libraries
   * [InitializrWeb](https://github.com/SteeltoeOSS/InitializrWeb) - the Initializr Web UI (based on [start.spring.io](https://github.com/spring-io/start.spring.io))
   * [InitializrService](https://github.com/SteeltoeOSS/InitializrService) - the main Initializr API
@@ -68,16 +63,16 @@ These are located in the [Steeltoe](https://github.com/SteeltoeOSS/Steeltoe) rep
 
 ## Releases
 
-Steeltoe releases are listed at https://github.com/SteeltoeOSS/Steeltoe/releases.
-For ongoing work, see the [issue milestones](https://github.com/SteeltoeOSS/Steeltoe/milestones).
+Steeltoe releases are listed [in the main repository](https://github.com/SteeltoeOSS/Steeltoe/releases) and are available on [NuGet.org](https://www.nuget.org/profiles/SteeltoeOSS).
+For ongoing work, see the [issue milestones](https://github.com/SteeltoeOSS/Steeltoe/milestones) or [access pre-release packages](https://github.com/SteeltoeOSS/Steeltoe?tab=readme-ov-file#pre-release-packages).
 
-## Release Types
+### Release Types
 
-- **Beta** (for example: beta1, beta2 ...)
+* **Beta** (for example: beta1, beta2 ...)
    A beta is a release that contains a subset of the full features planned for a release. Beta releases allow significant changes to be tested earlier in the release cycle. A beta release is not meant for production environments.
-- **Release Candidate** (for example: rc1, rc2, ...)
+* **Release Candidate** (for example: rc1, rc2, ...)
    A release candidate contains a full feature set and is available to the community for finding any last-minute major issues before the GA version is released. There could still be source code changes to fix defects, changes to documentation, and test cases, but these releases are generally considered production-grade and (until a GA release is available) their usage is supported in production environments.
-- **General Availability** (GA)
+* **General Availability** (GA)
    This is the full-featured and fully tested release, available to the public for use in production environments.
 
 ## Getting Started
@@ -92,7 +87,7 @@ The Steeltoe project welcomes contributions on GitHub both by filing issues and 
 
 Check out the [contributing guidelines](https://github.com/SteeltoeOSS/.github/blob/main/CONTRIBUTING.md) page to see how you can get involved and contribute to Steeltoe.
 
-Also its worth noting, the Steeltoe project has adopted the code of conduct defined by the [Contributor Covenant](https://contributor-covenant.org/).
+Also, its worth noting the Steeltoe project has adopted the code of conduct defined by the [Contributor Covenant](https://contributor-covenant.org/).
 If you'd like more information, see the [.NET Foundation Code of Conduct](https://www.dotnetfoundation.org/code-of-conduct) write-up.
 
 ## Getting the Code
@@ -100,29 +95,11 @@ If you'd like more information, see the [.NET Foundation Code of Conduct](https:
 The development of the next Steeltoe version occurs in the `main` branch of the [Steeltoe repository](https://github.com/SteeltoeOSS/Steeltoe).
 
 The source code for released versions can be found by their [git tag](https://github.com/SteeltoeOSS/Steeltoe/tags).
-For each released major version, a branch is available that contains the latest changes for that version. For example: `2.x`, `3.x`, 4.x`.
+For each released major version, a branch is available that contains the latest changes for that version. For example: `2.x`, `3.x`, `4.x`.
 
 Similar branches exist in other repositories. For example, the `main` branch in [Samples](https://github.com/SteeltoeOSS/Samples) builds against the development NuGet feed, which is populated from the Steeltoe `main` branch. In contrast, its `2.x`, `3.x` and `4.x` branches build against the latest related Steeltoe version on nuget.org.
 
-All release and release candidate packages are listed under the tags section on GitHub (e.g. 2.2.0).
-
-The released and release candidates can be found on [NuGet](https://www.nuget.org/profiles/SteeltoeOSS).
-
-The latest Steeltoe packages from each branch can be found in the [.NET Foundation NuGet feed](https://pkgs.dev.azure.com/dotnet/Steeltoe/_packaging/ci/nuget/v3/index.json).
-
-Using this nuget.config file will enable access to all Steeltoe packages:
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<configuration>
-  <packageSources>
-    <add key="SteeltoeDev" value="https://pkgs.dev.azure.com/dotnet/Steeltoe/_packaging/ci/nuget/v3/index.json" />
-    <add key="NuGet" value="https://api.nuget.org/v3/index.json" />
-  </packageSources>
-</configuration>
-```
-
-## Building from Source
+### Building from Source
 
 Steeltoe components can be built from source with a recent version of the [.NET SDK](https://dotnet.microsoft.com/download/visual-studio-sdks) on Windows, Linux or macOS. Any IDE that supports .NET is expected to work. Core contributors regularly use Visual Studio, Visual Studio Code, and JetBrains Rider. Visual Studio Solution Filter (`.slnf`) files are provided for each component, along with a single `.sln` file that contains all components.
 
@@ -132,7 +109,7 @@ Running the integration tests requires Config Server and Eureka to be running. S
 
 ## Governance Model
 
-As a member of the [.NET Foundation](https://dotnetfoundation.org/), the Steeltoe project has adopted a [project governance](https://github.com/dotnet/home/blob/master/governance/project-governance.md) model in line with that recommended by the Foundation.
+As a member of the [.NET Foundation](https://dotnetfoundation.org/), the Steeltoe project has adopted a [project governance](https://github.com/dotnet/home/blob/master/governance/project-governance.md) model in line with the recommendations made by the Foundation.
 
 ## Licenses
 
