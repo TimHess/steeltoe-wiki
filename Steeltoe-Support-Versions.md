@@ -11,7 +11,7 @@ Steeltoe follows the [VMware Tanzu OSS support policy](https://docs.broadcom.com
 
 ## Released Versions
 
-The supported .NET Runtimes have been tested against the latest patch release of each version.
+The supported .NET runtimes have been tested against the latest patch release of each Steeltoe version.
 We recommend running the latest minor with the latest patch release for each major version.
 
 ### Currently Supported Releases

@@ -63,7 +63,7 @@ These are located in the [Steeltoe](https://github.com/SteeltoeOSS/Steeltoe) rep
 
 ## Releases
 
-Steeltoe releases are listed [in the main repository](https://github.com/SteeltoeOSS/Steeltoe/releases) and are available on [NuGet.org](https://www.nuget.org/profiles/SteeltoeOSS).
+Steeltoe releases are [listed](https://github.com/SteeltoeOSS/Steeltoe/releases) in the Steeltoe repository and are available on [NuGet.org](https://www.nuget.org/profiles/SteeltoeOSS).
 For ongoing work, see the [issue milestones](https://github.com/SteeltoeOSS/Steeltoe/milestones) or [access pre-release packages](https://github.com/SteeltoeOSS/Steeltoe?tab=readme-ov-file#pre-release-packages).
 
 ### Release Types
