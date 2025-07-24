@@ -47,7 +47,7 @@ These are located in the [Steeltoe](https://github.com/SteeltoeOSS/Steeltoe) rep
 * Management - monitoring and management endpoints for web applications
 * Security - simplify integration of security services provided by the cloud platform
 
-#### Other Repositories
+### Other Repositories
 
 * [Samples](https://github.com/SteeltoeOSS/Samples) - our collection of samples, used as a reference for .NET application development with Steeltoe
 * [Documentation](https://github.com/SteeltoeOSS/Documentation) - the source for the [Steeltoe.io](https://steeltoe.io) website
