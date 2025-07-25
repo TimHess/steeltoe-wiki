@@ -9,25 +9,20 @@ Steeltoe follows the [VMware Tanzu OSS support policy](https://docs.broadcom.com
 * Major versions will be supported for up to 3 years from the release date.
 * Minor versions will be supported for at least 12 months from the release date.
 
+### Go-live Releases
+
+Go-live releases are supported by the Steeltoe team in production. These are typically our release candidate builds, just before the generally available (GA) release.
+
 ## Released Versions
 
 When new versions of Steeltoe are released, they are tested with the latest supported versions of .NET.
 It is recommended to run the latest patch version for the targeted Steeltoe release.
 
-### Currently Supported Releases
-
-The following table shows the releases that are currently supported:
+### Release Support Matrix
 
 | Steeltoe Version | Release Date       | End of Life Date | .NET Runtime Version  |
 | ---------------- | ------------       | ---------------- | --------------------  |
 | 3.2.x            | May 26, 2022       | May 26, 2026     | .NET Core 3.1, .NET 5 - 6 |
-
-### End of Life Releases
-
-The following table shows the releases that have reached end-of-life and are no longer supported:
-
-| Steeltoe Version | Release Date       | End of Life Date | .NET Runtime Version  |
-| ---------------- | ------------       | ---------------- | --------------------  |
 | 3.1.x            | July 13, 2021      | July 31, 2022    | .NET Core 3.1, .NET 5 |
 | 3.0.x            | August 21, 2020    | August 31, 2023  | .NET Core 3.1 |
 | 2.5.x            | October 1, 2020    | October 31, 2023 | .NET Framework 4.6.2 - 4.8, .NET Core 2.1 - 3.1 |
@@ -38,6 +33,12 @@ The following table shows the releases that have reached end-of-life and are no 
 | 2.0.x            | February 15, 2018  | December 31, 2021| .NET Framework 4.6.1 - 4.8, .NET Core 2.0 - 3.1 |
 | 1.1.x            | June 19, 2017      | August 31, 2019  | .NET Framework 4.5.2 - 4.7, .NET Core 1.0 - 1.1 |
 | 1.0.x            | April 7, 2017      | August 31, 2019  | .NET Framework 4.5.2 - 4.6.2, .NET Core 1.0 - 1.1 |
+
+> [!NOTE]
+> For each release, we list the original release date, along with the .NET versions supported at that moment in time.
+> These are the combinations that were confirmed to work when the release was created.
+> If newer .NET versions emerge before the end-of-life date, we don't list them here.
+> That doesn't mean they won't work or won't be supported, only that they aren't automatically guaranteed.
 
 ## Release Compatibility
 
