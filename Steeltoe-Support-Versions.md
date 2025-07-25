@@ -12,7 +12,7 @@ Steeltoe follows the [VMware Tanzu OSS support policy](https://docs.broadcom.com
 ## Released Versions
 
 When new versions of Steeltoe are released, they are tested with the latest supported versions of .NET.
-It is recommend to run the latest patch version for the targeted release.
+It is recommended to run the latest patch version for the targeted Steeltoe release.
 
 ### Currently Supported Releases
 
@@ -44,6 +44,7 @@ The following table shows the releases that have reached end-of-life and are no 
 The Steeltoe team is aware of the need for stability and backward compatibility between releases.
 Our goal is to keep backward compatibility across all minor and maintenance releases (for example: 3.1.3 should work with 3.1.2, 3.1.1, 3.1.0).
 Major releases are utilized to remove all deprecated code and make breaking changes when necessary for code optimization, enhancements, architecture changes, and redesign.
+We strive to keep all compatibility changes/breakages to major releases only.
 There is a rare chance that we might be forced to break compatibility in a minor release, but we will be sure to be clear of our reasons for doing so.
 
 ## .NET Runtime Support
