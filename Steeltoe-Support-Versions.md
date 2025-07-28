@@ -22,17 +22,17 @@ It is recommended to run the latest patch version for the targeted Steeltoe rele
 
 | Steeltoe Version | Release Date       | End of Life Date | .NET Runtime Version  |
 | ---------------- | ------------       | ---------------- | --------------------  |
-| 3.2.x            | May 26, 2022       | May 26, 2026     | .NET Core 3.1, .NET 5 - 6 |
-| 3.1.x            | July 13, 2021      | July 31, 2022    | .NET Core 3.1, .NET 5 |
-| 3.0.x            | August 21, 2020    | August 31, 2023  | .NET Core 3.1 |
-| 2.5.x            | October 1, 2020    | October 31, 2023 | .NET Framework 4.6.2 - 4.8, .NET Core 2.1 - 3.1 |
-| 2.4.x            | November 13, 2019  | December 31, 2021| .NET Framework 4.6.1 - 4.8, .NET Core 2.1 - 3.1 |
-| 2.3.x            | August 21, 2019    | December 31, 2021| .NET Framework 4.6.1 - 4.8, .NET Core 2.1 - 3.1 |
-| 2.2.x            | March 15, 2019     | December 31, 2021| .NET Framework 4.6.1 - 4.8, .NET Core 2.1 - 3.1 |
-| 2.1.x            | August 18, 2018    | December 31, 2021| .NET Framework 4.6.1 - 4.8, .NET Core 2.0 - 3.1 |
-| 2.0.x            | February 15, 2018  | December 31, 2021| .NET Framework 4.6.1 - 4.8, .NET Core 2.0 - 3.1 |
-| 1.1.x            | June 19, 2017      | August 31, 2019  | .NET Framework 4.5.2 - 4.7, .NET Core 1.0 - 1.1 |
-| 1.0.x            | April 7, 2017      | August 31, 2019  | .NET Framework 4.5.2 - 4.6.2, .NET Core 1.0 - 1.1 |
+| 3.2.0            | May 26, 2022       | May 26, 2023     | .NET Core 3.1, .NET 5 - 6 |
+| 3.1.0            | July 13, 2021      | July 31, 2022    | .NET Core 3.1, .NET 5 |
+| 3.0.0            | August 21, 2020    | August 31, 2023  | .NET Core 3.1 |
+| 2.5.0            | October 1, 2020    | October 31, 2023 | .NET Framework 4.6.2 - 4.8, .NET Core 2.1 - 3.1 |
+| 2.4.0            | November 13, 2019  | December 31, 2021| .NET Framework 4.6.1 - 4.8, .NET Core 2.1 - 3.1 |
+| 2.3.0            | August 21, 2019    | December 31, 2021| .NET Framework 4.6.1 - 4.8, .NET Core 2.1 - 3.1 |
+| 2.2.0            | March 15, 2019     | December 31, 2021| .NET Framework 4.6.1 - 4.8, .NET Core 2.1 - 3.1 |
+| 2.1.0            | August 18, 2018    | December 31, 2021| .NET Framework 4.6.1 - 4.8, .NET Core 2.0 - 3.1 |
+| 2.0.0            | February 15, 2018  | December 31, 2021| .NET Framework 4.6.1 - 4.8, .NET Core 2.0 - 3.1 |
+| 1.1.0            | June 19, 2017      | August 31, 2019  | .NET Framework 4.5.2 - 4.7, .NET Core 1.0 - 1.1 |
+| 1.0.0            | April 7, 2017      | August 31, 2019  | .NET Framework 4.5.2 - 4.6.2, .NET Core 1.0 - 1.1 |
 
 > [!NOTE]
 > For each release, we list the original release date, along with the .NET versions supported at that moment in time.
