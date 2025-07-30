@@ -78,7 +78,7 @@ For ongoing work, see the [issue milestones](https://github.com/SteeltoeOSS/Stee
 ## Getting Started
 
 1. Follow any "Get Started" link on the [Steeltoe site](https://steeltoe.io/)
-1. Review, run, and modify the extensive collection of [Samples](https://github.com/SteeltoeOSS/Samples) available on Github
+1. Review, run, and modify the extensive collection of [Samples](https://github.com/SteeltoeOSS/Samples) available on GitHub
 1. To get down into the details of any Steeltoe project, read the [documentation](https://docs.steeltoe.io/)
 
 ## Contributing
