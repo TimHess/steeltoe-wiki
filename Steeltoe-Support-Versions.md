@@ -1,6 +1,6 @@
 # Steeltoe Supported Versions
 
-This document shows all versions of Steeltoe and their support lifecycle.
+This document lists all versions of Steeltoe and their corresponding support lifecycles.
 
 ## Support Policy
 

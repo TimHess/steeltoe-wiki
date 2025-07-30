@@ -39,7 +39,7 @@ Steeltoe is fully open-source and can be found under the [SteeltoeOSS organizati
 
 These are located in the [Steeltoe](https://github.com/SteeltoeOSS/Steeltoe) repository:
 
-* Configuration - configuration providers which extend the reach of .NET Configuration services
+* Configuration - configuration providers that extend the reach of .NET Configuration services
 * Common - common packages used by other Steeltoe components
 * Connectors - simplify the process of configuring and using back-end services locally and in the cloud
 * Discovery - register and discover services locally and in the cloud
